@@ -32,8 +32,17 @@ player client.
   * To run the new pytest suite from the project root:
     * `pytest`
     * `pytest tests/test_basic.py`
-  * Core library source is now located in `src/`, with root-level wrappers preserving existing imports.
+  * Core library source is now located in `src/`.
   * Legacy expect-based shell tests and `test/test.sh` have been removed; the Python tests now cover the same behavior.
+
+# Console scripts
+
+After installation, the package exposes these console scripts:
+
+  * `board-game-client` → runs the player client interface
+  * `board-game-server` → runs the game server/admin interface
+  * `board-game-observer` → runs the neutral game observer
+  * `board-game-test-suite` → runs the standalone package test harness
 
 # TODO
 

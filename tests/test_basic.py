@@ -1,7 +1,6 @@
 import pytest
 
-from BoardGameConcept import UnitType, Board, Player, Empty
-from GameData import GameData
+from board_game_concept import UnitType, Board, Player, Empty, GameData
 
 
 def test_imports():

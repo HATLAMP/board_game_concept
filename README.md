@@ -28,7 +28,12 @@ player client.
   * Then activate the venv `source .venv/bin/activate`
   * https://pypi.org/project/board using `pip install board`
   * pyaml `pip install pyaml`
-  * To test do: `cd test/; ./test.sh`
+  * pytest using `pip install pytest`
+  * To run the new pytest suite from the project root:
+    * `pytest`
+    * `pytest tests/test_basic.py`
+  * Core library source is now located in `src/`, with root-level wrappers preserving existing imports.
+  * Legacy expect-based shell tests and `test/test.sh` have been removed; the Python tests now cover the same behavior.
 
 # TODO
 

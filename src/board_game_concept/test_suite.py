@@ -4,8 +4,13 @@ Board Game Concept - Automated Test Suite
 Tests core module functionality without requiring Unix/Linux tools
 """
 
-from BoardGameConcept import UnitType, Board, Player, Empty
-from GameData import GameData
+import sys
+from pathlib import Path
+
+if __package__ is None:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from board_game_concept import UnitType, Board, Player, Empty, GameData
 
 
 def test_imports():

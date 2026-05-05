@@ -5,12 +5,12 @@ import yaml
 import os
 import time
 import argparse
+from pathlib import Path
 
-from BoardGameConcept import UnitType
-from BoardGameConcept import Board
-from BoardGameConcept import Player
-from BoardGameConcept import Empty
-from GameData import GameData
+if __package__ is None:
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from board_game_concept import UnitType, Board, Player, Empty, GameData
 
 DEBUG = False
 

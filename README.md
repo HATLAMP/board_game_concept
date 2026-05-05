@@ -36,3 +36,6 @@ player client.
   * separate all the DB storage out of the `GameData.py` class and rename,
     create dedicated objects for data returned from the DB.
 
+  
+Note to check my clone... -R
+
